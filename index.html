@@ -15,13 +15,19 @@
   <form id="form">
     <div id="grades">
       <label for="name">Nome do Aluno:</label>
-      <input type="text" id="name" placeholder="Digite o nome" required>
+      <input type="text" id="name" class="name" placeholder="Digite o nome" required>
 
-      <label for="grade1">Nota 1:</label>
-      <input type="number" id="grade1" class="grade" placeholder="Digite a 1ª nota" min="0" max="10" required>
-
-      <label for="grade2">Nota 2:</label>
-      <input type="number" id="grade2" class="grade" placeholder="Digite a 2ª nota" min="0" max="10" required>
+      <div class="input-container">
+        <label for="grade1">Nota 1:</label>
+        <input type="number" id="grade1" class="grade" placeholder="Digite a 1ª nota" min="0" max="10" required>
+        <button type="button" class="remove-btn" onclick="removeInput(this)">×</button>
+      </div>
+  
+      <div class="input-container">
+        <label for="grade2">Nota 2:</label>
+        <input type="number" id="grade2" class="grade" placeholder="Digite a 2ª nota" min="0" max="10" required>
+        <button type="button" class="remove-btn" onclick="removeInput(this)">×</button>
+      </div>
     </div>
 
     <button type="button" id="addGrade">Adicionar nota</button>
