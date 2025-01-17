@@ -115,7 +115,6 @@ function removeInput(button) {
     gradePositioned += 1;
   });
 }
-
 const removeButtons = document.getElementsByClassName("remove-btn");
 
 removeButtons.forEach((button) => {
