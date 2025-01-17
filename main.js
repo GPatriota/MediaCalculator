@@ -24,6 +24,7 @@ document.getElementById("calculate").addEventListener("click", function() {
     if (verifyInputs){
       return;
     }
+    
     const determineStatus = (media) => {
       if (media >= 7) return "Aprovado";
       if (media >= 5) return "Recuperação";
